@@ -1,0 +1,23 @@
+/:
+  controller: Security
+  action: homePage
+
+/bo/dashboard:
+  controller: Main
+  action: home
+
+/register:
+  controller: Security
+  action: register
+
+/activate-account:
+  controller: Security
+  action: activateAccount
+
+/login:
+  controller: Security
+  action: login
+
+/login/logout:
+  controller: Security
+  action: logout

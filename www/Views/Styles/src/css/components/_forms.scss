@@ -1,0 +1,56 @@
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px; /* Ajoute un espace entre les champs du formulaire */
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  width: 150px; /* Ajustez cette valeur selon vos besoins */
+  text-align: left;
+  margin-right: 10px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%; /* Assure que les champs prennent toute la largeur disponible */
+  box-sizing: border-box; /* Inclut la bordure et le padding dans la largeur totale */
+}
+
+input[type="radio"] {
+  width: auto; /* Les radios n'ont pas besoin de prendre toute la largeur */
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: white; /* Couleur du bouton */
+  color: black;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  width: 30%;
+  font-size: 1em;
+}
+
+.error, .success {
+  list-style-type: none;
+  padding: 0;
+}
+
+.error li, .success li {
+  color: red; /* Vous pouvez changer les couleurs en fonction de votre thème */
+  margin-bottom: 5px;
+}
+
+.success li {
+  color: green;
+}
